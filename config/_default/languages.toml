@@ -1,0 +1,7 @@
+[en]
+    languageName = "English"
+    title        = "Personal Blog"
+    weight       = 1
+
+    [en.params.sidebar]
+        subtitle = "My thoughts on tech, life and more..."
