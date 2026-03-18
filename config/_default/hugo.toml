@@ -1,6 +1,6 @@
-baseURL                = "https://demo.stack.cai.im/"
+baseURL                = "https://blog.mihirniyogi.com/"
 languageCode           = "en-us"
-title                  = "Hugo Theme Stack"
+title                  = "Mihir Niyogi's Blog"
 # Theme i18n support
 # See i18n folder for available languages
 defaultContentLanguage = "en"
