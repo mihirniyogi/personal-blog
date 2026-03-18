@@ -1,0 +1,8 @@
+public/
+resources/
+
+*.bak
+*.swp
+*~
+
+.hugo_build.lock
