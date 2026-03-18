@@ -1,0 +1,51 @@
+name: Deploy Hugo to Pi
+
+on:
+  push:
+    branches: [main]
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+        with:
+          submodules: true
+          fetch-depth: 0
+      
+      - name: Setup Hugo
+        uses: peaceiris/actions-hugo@v3
+        with:
+          hugo-version: 'latest'
+          extended: true
+      
+      - name: Build project
+        run: hugo --minify
+      
+      - name: Install cloudflared
+        run: |
+          curl -L https://github.com/cloudflare/cloudflared/releases/latest/download/cloudflared-linux-amd64.deb -o cloudflared.deb
+          sudo dpkg -i cloudflared.deb
+      
+      - name: Setup SSH Config
+        run: |
+          mkdir -p ~/.ssh
+          chmod 700 ~/.ssh
+          echo "${{ secrets.SSH_PRIVATE_KEY }}" > ~/.ssh/id_ed25519
+          chmod 600 ~/.ssh/id_ed25519
+          
+          cat <<EOF > ~/.ssh/config
+          Host ${{ secrets.RPI_HOST }}
+            HostName ${{ secrets.RPI_HOST }}
+            ProxyCommand /usr/bin/cloudflared access ssh --hostname %h --id ${{ secrets.CF_CLIENT_ID }} --secret ${{ secrets.CF_CLIENT_SECRET }}
+            User ${{ secrets.RPI_USER }}
+            IdentityFile ~/.ssh/id_ed25519
+            StrictHostKeyChecking no
+            UserKnownHostsFile /dev/null
+          EOF
+        
+      - name: Deploy to RPi via rsync
+        run: |
+          ssh ${{ secrets.RPI_HOST }} "mkdir -p /var/www/blog"
+          rsync -avz --delete ./dist/ ${{ secrets.RPI_USER }}@${{ secrets.RPI_HOST }}:/var/www/blog/
