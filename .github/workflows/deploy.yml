@@ -48,4 +48,4 @@ jobs:
       - name: Deploy to RPi via rsync
         run: |
           ssh ${{ secrets.RPI_HOST }} "mkdir -p /var/www/blog"
-          rsync -avz --delete ./public/ ${{ secrets.RPI_USER }}@${{ secrets.RPI_HOST }}:/var/www/blog/
+          rsync -avz --delete --chown=github:www-data --chmod=Dg=rwx,Fg=rwx ./public/ ${{ secrets.RPI_USER }}@${{ secrets.RPI_HOST }}:/var/www/blog/
