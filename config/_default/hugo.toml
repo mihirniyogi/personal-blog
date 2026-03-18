@@ -1,6 +1,6 @@
 baseURL                = "https://blog.mihirniyogi.com/"
 languageCode           = "en-us"
-title                  = "Mihir Niyogi's Blog (TBD)"
+title                  = "Mihir Niyogi's Blog"
 # Theme i18n support
 # See i18n folder for available languages
 defaultContentLanguage = "en"
