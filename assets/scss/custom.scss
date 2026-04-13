@@ -1,0 +1,86 @@
+/* --- Fonts --- */
+@font-face {
+    font-family: 'Inter';
+    src: url('/fonts/Inter.woff2') format('woff2-variations'),
+        url('/fonts/Inter.woff2') format('woff2'); /* Fallback */
+    font-weight: 100 900;
+    font-display: swap;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Inter';
+    src: url('/fonts/Inter_Italic.woff2') format('woff2-variations'),
+        url('/fonts/Inter_Italic.woff2') format('woff2'); /* Fallback */
+    font-weight: 100 900;
+    font-display: swap;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'JetBrainsMono';
+    src: url('/fonts/JetBrainsMono.woff2') format('woff2-variations'),
+        url('/fonts/JetBrainsMono.woff2') format('woff2'); /* Fallback */
+    font-weight: 100 800;
+    font-display: swap;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'JetBrainsMono';
+    src: url('/fonts/JetBrainsMono-Italic.woff2') format('woff2-variations'),
+        url('/fonts/JetBrainsMono-Italic.woff2') format('woff2'); /* Fallback */
+    font-weight: 100 800;
+    font-display: swap;
+    font-style: italic;
+}
+
+:root {
+    --body-background: hsl(210, 20%, 98%);
+    --base-font-family: 'Inter', system-ui, sans-serif;
+    --code-font-family: 'JetBrainsMono', 'Courier New', monospace;
+
+    --accent: hsl(220, 90%, 56%);
+}
+
+// Sidebar title, subtitle, avatar adjustment
+.sidebar {
+    --sidebar-avatar-size: 200px;
+
+    @include respond(2xl) {
+        --sidebar-avatar-size: 240px;
+    }
+
+    header {
+        .site-name {
+            font-size: 2rem;
+            font-weight: 700;
+            @include respond(2xl) {
+                font-size: 2.2rem;
+            }     
+        }
+
+        .site-description {
+            font-size: 1.5rem;
+            font-weight: 400;
+            @include respond(2xl) {
+                font-size: 1.7rem;
+            }
+        }
+
+        .site-avatar .site-logo {
+            object-fit: cover;
+            object-position: center;
+            border-radius: 15%;
+            filter: hue-rotate(180deg) saturate(35%);
+        }
+    }
+}
+
+// Footer adjustment
+footer.site-footer {
+    &:before {
+        background: var(--accent);
+    }
+}
+
