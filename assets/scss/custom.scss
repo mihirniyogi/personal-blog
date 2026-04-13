@@ -40,7 +40,8 @@
     --base-font-family: 'Inter', system-ui, sans-serif;
     --code-font-family: 'JetBrainsMono', 'Courier New', monospace;
 
-    --accent: hsl(220, 90%, 56%);
+    --accent: hsl(220, 73%, 56%);
+    --accent-dark: hsl(220, 73%, 46%);
 }
 
 // Sidebar title, subtitle, avatar adjustment
@@ -84,3 +85,53 @@ footer.site-footer {
     }
 }
 
+// Single post pages
+body.article-page {
+    .left-sidebar {
+        display:none;
+    }
+
+    .back-to-home {
+        a {
+            display: inline-flex;
+            align-items: center; 
+            gap: 4px;          
+            color: var(--accent-dark); 
+            opacity: 0.7;
+            font-size: 1.5rem; 
+            font-weight: 500;
+            transition: all 0.2s ease;
+
+            svg {
+                width: 16px; 
+                height: 16px;
+                stroke-width: 2.5;
+            }
+
+            &:hover {
+                opacity: 1;
+                transform: translateX(-3px);
+            }
+        }
+    }
+}
+
+.article-footer {
+    .article-copyright, 
+    .article-license {
+        color: hsl(210, 10%, 70%);
+        text-align: center;
+        opacity: 0.7;
+
+        a {
+            color: var(--accent);
+            text-decoration: none;
+            font-weight: 400;
+        }
+
+        svg {
+            width: 16px;
+            height: 16px;
+        }
+    }
+}
