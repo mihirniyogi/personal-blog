@@ -49,3 +49,19 @@ jobs:
         run: |
           ssh ${{ secrets.RPI_HOST }} "mkdir -p /var/www/blog"
           rsync -avz --delete ./public/ ${{ secrets.RPI_USER }}@${{ secrets.RPI_HOST }}:/var/www/blog/
+
+      - name: Notify Telegram on Success
+        if: success()
+        run: |
+          curl -s -X POST https://api.telegram.org/bot${{ secrets.TELEGRAM_BOT_TOKEN }}/sendMessage \
+            -d chat_id=${{ secrets.TELEGRAM_CHAT_ID }} \
+            -d parse_mode="HTML" \
+            -d text="✅ <b>Deployment Successful (Blog)</b>%0A%0A<b>Repo:</b> ${{ github.repository }}%0A<b>Commit:</b> ${{ github.event.head_commit.message }}%0A<b>Status:</b> Blog is now live on the Pi."
+
+      - name: Notify Telegram on Failure
+        if: failure()
+        run: |
+          curl -s -X POST https://api.telegram.org/bot${{ secrets.TELEGRAM_BOT_TOKEN }}/sendMessage \
+            -d chat_id=${{ secrets.TELEGRAM_CHAT_ID }} \
+            -d parse_mode="HTML" \
+            -d text="❌ <b>Deployment Failed</b>%0A%0AThe push to <b>${{ secrets.RPI_HOST }}</b> failed. Check the GitHub Actions logs for details."
