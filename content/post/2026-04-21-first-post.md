@@ -16,10 +16,12 @@ I would like to improve my writing skills as time goes on, of course; I fancy my
 
 The level of detail may vary for privacy reasons, for the sake of both myself and others in my life.
 
-##### the tech setup
+### the tech setup
 
 As a tech nerd, I have opted to self-host this blog on a tiny computer (a Raspberry Pi, for those who know) back home in Singapore, to which I have remote access. I spent an awful lot of time setting this up instead of doing the actual writing, something a close friend of mine called Productive Procrastination. I hope that changes too. 
 
-floating observation 🫧 the word 'hope' in this post has been mentioned a total of 4 times, including this one.
+> floating observation 🫧 the word 'hope' in this post has been mentioned a total of 4 times, including this one.
 
-Cheers until next time, \~M
+Cheers until next time, 
+
+\~M
