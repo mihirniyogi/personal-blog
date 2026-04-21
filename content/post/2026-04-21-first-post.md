@@ -12,7 +12,7 @@ Hi everyone! Welcome to my small corner of the vast Internet. Writing this is _e
 
 My hope is for the blog to become a place where I share some of my thoughts and feelings. I want to share about the new coffee place I try, my new favourite song. I will experiment with new ideas, share life updates, post pictures and discuss deep thoughts. And generally use this as an organised dump for whatever is going on in my head. 
 
-I would like to improve my writing skills as time goes on, of course; I fancy myself a logical, bullet-point, step-by-step, left-brained kind of person. I do hope my the other, more creative side further developed as I publish more and more.   
+I would like to improve my writing skills as time goes on, of course; I fancy myself a logical, bullet-point, step-by-step, left-brained kind of person. I do hope the other, more creative side further develops as I publish more and more.   
 
 The level of detail may vary for privacy reasons, for the sake of both myself and others in my life.
 
