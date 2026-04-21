@@ -1,10 +1,10 @@
 ---
-title: "Private Posts"
-_build: 
+title: "Private Archive"
+build:
   list: never
   render: always
 cascade:
-  _build:
+  build:
     list: local
     render: always
 ---
