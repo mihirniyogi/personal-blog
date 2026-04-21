@@ -5,7 +5,8 @@ description: Welcome to my corner of the Internet
 date: 2026-04-21T15:46:00
 image: ''
 categories: []
-tags: []
+tags:
+  - exchange,coffee,raspberry pi,hope
 ---
 
 Hi everyone! Welcome to my small corner of the vast Internet. Writing this is _exciting_ as this is my first ever blog post. It is _especially_ exciting seeing as how I'm on exchange in Melbourne, Australia! 
