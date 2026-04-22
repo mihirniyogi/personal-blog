@@ -6,7 +6,11 @@ date: 2026-04-22T10:05:00
 image: ''
 categories: []
 tags:
-  - goals,human,australia,exchange,pressure
+  - goals
+  - human
+  - australia
+  - exchange
+  - pressure
 ---
 
 I have goals, so many things I want to achieve in a short span of time. I want to 
