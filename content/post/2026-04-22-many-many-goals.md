@@ -29,7 +29,7 @@ Dare I say, juggling all this is a little stressful? That is 13 bullet points. I
 
 Dare I say, the real magic of Melbourne is that I can do whatever I feel like, whatever makes me feel good. The whole point of the exchange experience is to have the space to try out new stuff in my own time and decide whether I like it or not. 
 
-> I am only human
+> **I am only human**
 
 (this reminds me of a song called Human by Rag'n'Bone Man)
 
