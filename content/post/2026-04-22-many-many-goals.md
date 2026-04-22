@@ -1,6 +1,6 @@
 ---
 title: Many, many goals
-draft: true
+draft: false
 description: 🎯
 date: 2026-04-22T10:05:00
 image: ''
