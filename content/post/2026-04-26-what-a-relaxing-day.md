@@ -1,8 +1,8 @@
 ---
 title: What a relaxing day
-draft: false
 description: ''
-date: 2026-04-26T16:54:00
+drink: Iced Matcha Latte @ [Little Rogue](https://maps.app.goo.gl/6YLZe3ATr3dMp16x9)
+song: '[In The Air Tonight by Phil Collins](https://open.spotify.com/track/18AXbzPzBS8Y3AkgSxzJPb?si=83c3c34e7a3f40dc)'
 image: ''
 categories: []
 tags:
@@ -13,6 +13,8 @@ tags:
   - yarra river
   - marvel
   - grass
+draft: false
+date: 2026-04-26T16:54:00
 ---
 
 Today felt incredibly relaxing. 
@@ -35,11 +37,7 @@ Finally, I travelled to UniMelb and did some work here too within the Old Engine
 
 Having such good days where I'm surrounded by nature and also the cool city I think replenishes something I call a "hope level". It's this reassurance that everything is going to be OK. It's not a big-picture thing, but just, living life better. Not to say that I don't have deadlines or assignments or work; I absolutely do. The key difference here is that when you're in and around nice people and nice places, it gives you a sense of confidence in facing challenges. Life becomes as if on easy mode; smooth-sailing; relaxing; cool; _chill_. I am less scared of my immediate future.
 
-I might start the following "X of the Day" thing. I don't post daily, so it's really "X of the short phase of my life I'm in right now". To be improved. 
-
-> Drink of the Day: Iced Matcha Latte @ Little Rogue
-
-> Song of the Day: In The Air Tonight by Phil Collins
+I might start the following "X of the Day" thing. I don't post daily, so it's really "X of the short phase of my life I'm in right now". To be improved.
 
 Cheers until next time,
 
