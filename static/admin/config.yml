@@ -12,7 +12,7 @@ public_folder: /uploads
 
 collections:
   - name: post
-    label: Post
+    label: "Public Post"
     folder: "content/post"
     create: true
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
@@ -20,16 +20,17 @@ collections:
       preview: false
     fields:
       - { label: "Title", name: "title", widget: "string" }
-      - { label: "Draft", name: "draft", widget: "boolean", default: true }
       - { label: "Description", name: "description", widget: "string", required: false }
+      - { label: "Draft", name: "draft", widget: "boolean", default: true }
       - { label: "Date", name: "date", widget: "datetime" }
-      - { label: "Image", name: "image", widget: "image", required: false }
-      - { label: "Categories", name: "categories", widget: "list", required: false }
-      - { label: "Tags", name: "tags", widget: "list", required: false }
+      - { label: "Featured Image", name: "image", widget: "image", required: false }
+      - { label: "Categories", name: "categories", widget: "list", required: false, field: { widget: "string" } }
+      - { label: "Tags", name: "tags", widget: "list", required: false, field: { widget: "string" } }
+      - { label: "Series", name: "series", widget: "list", required: false, field: { widget: "string" } }
       - { label: "Body", name: "body", widget: "markdown" }
   
   - name: private-post
-    label: "Private Post"
+    label: "🔒 Private Post"
     folder: "content/private"
     create: true
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
@@ -37,10 +38,11 @@ collections:
       preview: false
     fields:
       - { label: "Title", name: "title", widget: "string" }
-      - { label: "Draft", name: "draft", widget: "boolean", default: true }
       - { label: "Description", name: "description", widget: "string", required: false }
+      - { label: "Draft", name: "draft", widget: "boolean", default: true }
       - { label: "Date", name: "date", widget: "datetime" }
-      - { label: "Image", name: "image", widget: "image", required: false }
-      - { label: "Categories", name: "categories", widget: "list", required: false }
-      - { label: "Tags", name: "tags", widget: "list", required: false }
+      - { label: "Featured Image", name: "image", widget: "image", required: false }
+      - { label: "Categories", name: "categories", widget: "list", required: false, field: { widget: "string" } }
+      - { label: "Tags", name: "tags", widget: "list", required: false, field: { widget: "string" } }
+      - { label: "Series", name: "series", widget: "list", required: false, field: { widget: "string" } }
       - { label: "Body", name: "body", widget: "markdown" }
