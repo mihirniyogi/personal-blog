@@ -1,8 +1,8 @@
 ---
 title: What a relaxing day
-draft: false
 description: ''
-date: 2026-04-26T16:54:00
+drink: Iced Matcha Latte @ [Little Rogue](https://maps.app.goo.gl/6YLZe3ATr3dMp16x9)
+song: '[In The Air Tonight by Phil Collins](https://open.spotify.com/track/18AXbzPzBS8Y3AkgSxzJPb?si=83c3c34e7a3f40dc)'
 image: ''
 categories: []
 tags:
@@ -13,6 +13,8 @@ tags:
   - yarra river
   - marvel
   - grass
+draft: false
+date: 2026-04-26T16:54:00
 ---
 
 Today felt incredibly relaxing. 
