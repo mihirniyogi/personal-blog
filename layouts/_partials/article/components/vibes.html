@@ -1,0 +1,15 @@
+{{ if or .Params.drink .Params.song }}
+<div class="post-vibes-container">
+    {{ if .Params.drink }}
+    <div class="vibe-block">
+        <span class="vibe-text">Drink of the Day 🍵 {{ .Params.drink | markdownify }}</span>
+    </div>
+    {{ end }}
+
+    {{ if .Params.song }}
+    <div class="vibe-block">
+        <span class="vibe-text">Song of the Day 🎵 {{ .Params.song | markdownify}}</span>
+    </div>
+    {{ end }}
+</div>
+{{ end }}
