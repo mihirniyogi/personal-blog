@@ -22,8 +22,8 @@ collections:
       - { label: "Title", name: "title", widget: "string" }
       - { label: "Description", name: "description", widget: "string", required: false }
       - { label: "Body", name: "body", widget: "markdown" }
-      - { label: "Drink of the Day", name: "drink", widget: "string", required: false }
-      - { label: "Song of the Day", name: "song", widget: "string", required: false }
+      - { label: "Drink of the Day", name: "drink", widget: "markdown", required: false }
+      - { label: "Song of the Day", name: "song", widget: "markdown", required: false }
       - { label: "Featured Image", name: "image", widget: "image", required: false }
       - { label: "Categories", name: "categories", widget: "list", required: false, field: { widget: "string" } }
       - { label: "Tags", name: "tags", widget: "list", required: false, field: { widget: "string" } }
