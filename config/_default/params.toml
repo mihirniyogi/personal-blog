@@ -7,7 +7,7 @@ rssFullContent = true
 [sidebar]
     emoji    = ""
     subtitle = "My thoughts on life, tech and more..."
-    avatar   = "img/coffee.jpg"
+    avatar   = "img/city.jpg"
 
 [article]
     [article.license]

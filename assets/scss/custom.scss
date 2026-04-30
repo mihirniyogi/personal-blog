@@ -71,9 +71,9 @@
 
         .site-avatar .site-logo {
             object-fit: cover;
-            object-position: center;
+            object-position: center 5%;
             border-radius: 15%;
-            filter: hue-rotate(180deg) saturate(35%);
+            // filter: hue-rotate(180deg) saturate(35%);
         }
     }
 }
