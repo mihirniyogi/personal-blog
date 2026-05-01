@@ -1,16 +1,19 @@
 ---
 title: Many, many goals
-draft: false
 description: 🎯
-date: 2026-04-22T10:05:00
+drink: ''
+song: ''
 image: ''
-categories: []
+categories:
+  - Musings
 tags:
   - goals
   - human
   - australia
   - exchange
   - pressure
+draft: false
+date: 2026-04-22T10:05:00
 ---
 
 I have goals, so many things I want to achieve in a short span of time. I want to 
