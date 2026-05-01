@@ -4,8 +4,7 @@ description: Welcome to my corner of the Internet
 drink: ''
 song: ''
 image: ''
-categories:
-  - Day Drift
+categories: []
 tags:
   - exchange,coffee,raspberry pi,hope
 draft: false
