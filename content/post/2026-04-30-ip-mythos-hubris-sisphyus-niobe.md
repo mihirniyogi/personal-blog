@@ -1,9 +1,11 @@
 ---
 title: '[IP] Mythos - Hubris - Sisphyus, Niobe'
 description: My first chapter recap/review!
+drink: ''
+song: ''
 image: ''
 categories:
-  - Reading Review & Recap
+  - Reading Recap
 tags:
   - Mythos
   - Stephen Fry
