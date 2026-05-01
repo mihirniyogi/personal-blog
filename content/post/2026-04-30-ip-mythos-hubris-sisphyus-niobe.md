@@ -14,7 +14,7 @@ tags:
   - Sisphyus
 series:
   - Mythos
-draft: false
+draft: true
 date: 2026-05-01T08:16:00
 ---
 
