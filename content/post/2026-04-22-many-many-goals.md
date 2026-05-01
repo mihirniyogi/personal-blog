@@ -5,7 +5,7 @@ drink: ''
 song: ''
 image: ''
 categories:
-  - Musings
+  - Mindful Musings
 tags:
   - goals
   - human
