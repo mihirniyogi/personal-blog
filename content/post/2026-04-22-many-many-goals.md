@@ -2,7 +2,7 @@
 title: Many, many goals
 description: 🎯
 drink: ''
-song: ''
+song: "[Human by Rag'n'Bone Man](https://open.spotify.com/track/58zsLZPvfflaiIbNWoA22O?si=451442845974484f)"
 image: ''
 categories:
   - Mindful Musings
@@ -37,8 +37,6 @@ Dare I say, juggling all this is a little stressful? That is 13 bullet points. I
 Dare I say, the real magic of Melbourne is that I can do whatever I feel like, whatever makes me feel good. The whole point of the exchange experience is to have the space to try out new stuff in my own time and decide whether I like it or not. 
 
 > **I am only human**
-
-(this reminds me of a song called Human by Rag'n'Bone Man)
 
 Until next time which is probably tomorrow at this rate,
 
