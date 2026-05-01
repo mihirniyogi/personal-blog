@@ -4,7 +4,8 @@ description: ''
 drink: Iced Matcha Latte @ [Little Rogue](https://maps.app.goo.gl/6YLZe3ATr3dMp16x9)
 song: '[In The Air Tonight by Phil Collins](https://open.spotify.com/track/18AXbzPzBS8Y3AkgSxzJPb?si=83c3c34e7a3f40dc)'
 image: ''
-categories: []
+categories:
+  - Living Life
 tags:
   - relaxing
   - park
