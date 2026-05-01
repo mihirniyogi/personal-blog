@@ -1,12 +1,15 @@
 ---
 title: First Post!
-draft: false
 description: Welcome to my corner of the Internet
-date: 2026-04-21T15:46:00
+drink: ''
+song: ''
 image: ''
-categories: []
+categories:
+  - Day Drift
 tags:
   - exchange,coffee,raspberry pi,hope
+draft: false
+date: 2026-04-21T15:46:00
 ---
 
 Hi everyone! Welcome to my small corner of the vast Internet. Writing this is _exciting_ as this is my first ever blog post. It is _especially_ exciting seeing as how I'm on exchange in Melbourne, Australia! 
