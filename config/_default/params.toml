@@ -40,4 +40,4 @@ rssFullContent = true
 [imageProcessing]
     [imageProcessing.content]
         enabled = true
-        widths  = [200, 400, 600]
+        widths  = [100, 200, 300]
