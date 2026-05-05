@@ -7,6 +7,10 @@ backend:
 
 publish_mode: simple
 
+# these global settings are to avoid CMS errors; collections should override this.
+media_folder: static/uploads
+public_folder: /uploads
+
 collections:
   - name: post
     label: "Public Post"
