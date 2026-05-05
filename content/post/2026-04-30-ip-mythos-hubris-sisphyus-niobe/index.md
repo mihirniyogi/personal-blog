@@ -13,7 +13,7 @@ tags:
   - Niobe
 series:
   - Mythos
-draft: false
+draft: true
 date: 2026-05-05T20:53:00
 ---
 
@@ -23,7 +23,7 @@ I've recently gotten into Greek Mythology and am reading Mythos by Stephen Fry. 
 
 ### Sisyphus
 
-Though he is but a mere mortal, there are multiple stories of him defying the gods, and death himself, TWtICE. What's surprising, I think, is how well defiance and cunning served him throughout his longer-than-usual life and also the _extent_ of his cunning to get his way. His trickeries include but are not limited to:
+Though he is but a mere mortal, there are multiple stories of him defying the gods, and death himself, TWICE. What's surprising, I think, is how well defiance and cunning served him throughout his longer-than-usual life and also the _extent_ of his cunning to get his way. His trickeries include but are not limited to:
 
 - Sisyphus exposes Zeus for abducting Aegina, exorting a reward from her father, a river god Asopos.
 - To punish him for violating Xenia (sacred hospitality), Zeus sends Thanatos, the god of death. 
