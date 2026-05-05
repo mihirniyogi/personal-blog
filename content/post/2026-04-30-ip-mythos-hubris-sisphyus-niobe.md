@@ -7,16 +7,14 @@ image: ''
 categories:
   - Reading Recap
 tags:
-  - Mythos
-  - Stephen Fry
   - Greek Mythology
   - Hubris
   - Sisphyus
   - Niobe
 series:
   - Mythos
-draft: true
-date: 2026-05-05T20:00:00
+draft: false
+date: 2026-05-05T20:15:00
 ---
 
 ### what's this series about?
@@ -33,9 +31,7 @@ Though he is but a mere mortal, there are multiple stories of him defying the go
 - Hermes frees him, setting Thanatos upon Sisyphus, but he cheats death in a roundabout way by manipulating his burial rites and tricking Persephone. 
 - He eventually gets tricked by Hermes, forever pushing the boulder to the top (and believing that it is the way) to escape hell. A "Sisyphean task" is therefore a task that requires constant effort but is never-ending.  
 
-![Sisphyus rolling a boulder up](/uploads/Punishment_sisyph.jpg)
-
-*Painting of Sisyphus by Titian (Public Domain, via Wikimedia Commons)*
+![Sisphyus rolling a boulder up](/uploads/Punishment_sisyph.jpg "Painting of Sisyphus by Titian (Public Domain, via Wikimedia Commons)")
 
 It's impressive how far Sisyphus' wits and sheer audacity carries him. But alas, one can't escape the consequences of one's actions.  
 
