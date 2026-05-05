@@ -7,13 +7,13 @@ backend:
 
 publish_mode: simple
 
-media_folder: static/uploads
-public_folder: /uploads
-
 collections:
   - name: post
     label: "Public Post"
     folder: "content/post"
+    path: "{{year}}-{{month}}-{{day}}-{{slug}}/index"
+    media_folder: ""
+    public_folder: ""
     create: true
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
     editor:
@@ -34,6 +34,9 @@ collections:
   - name: private-post
     label: "🔒 Private Post"
     folder: "content/private"
+    path: "{{year}}-{{month}}-{{day}}-{{slug}}/index"
+    media_folder: ""
+    public_folder: ""
     create: true
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
     editor:
