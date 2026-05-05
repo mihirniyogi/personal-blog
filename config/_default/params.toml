@@ -36,3 +36,8 @@ rssFullContent = true
     [cookies.categories]
         analytics  = true
         functional = true
+
+[imageProcessing]
+    [imageProcessing.content]
+        enabled = true
+        widths  = [200, 400, 600]
