@@ -1,0 +1,46 @@
+{{- $image := partial "helper/image" (dict "Resources" .Page.Resources "Image" .Destination "Context" .Page) -}}
+{{- $alt := .PlainText | safeHTML -}}
+{{- $src := or $image.Permalink .Destination -}}
+
+{{/* Parse "400px: Caption text" or "400px" from the title field */}}
+{{- $width := "" -}}
+{{- $caption := "" -}}
+{{- if .Title -}}
+    {{- $widthMatch := findRE `^[0-9]+[a-zA-Z%]+` .Title -}}
+    {{- if $widthMatch -}}
+        {{- $width = index $widthMatch 0 -}}
+        {{- $caption = .Title | replaceRE `^[0-9]+[a-zA-Z%]+:?\s*` "" -}}
+    {{- else -}}
+        {{- $caption = .Title -}}
+    {{- end -}}
+{{- end -}}
+
+{{- if $width -}}
+<figure style="text-align: center;">
+  <img src="{{ $src }}" style="width: {{ $width }}; max-width: none;" alt="{{ $alt }}" loading="lazy">
+  {{- if $caption }}<figcaption>{{ $caption | markdownify }}</figcaption>{{ end }}
+</figure>
+{{- else -}}
+{{- $galleryImage := and $image.Height $image.Width -}}
+{{- $attributes := dict -}}
+{{- if $galleryImage -}}
+    {{- $attributes = (dict
+        "data-flex-grow" (div (mul $image.Width 100) $image.Height)
+        "data-flex-basis" (printf "%dpx" (div (mul $image.Width 240) $image.Height))
+    ) -}}
+{{- end -}}
+{{ partial "helper/responsive-image" (dict
+    "Resource" $image.Resource
+    "Widths" (cond .Page.Site.Params.ImageProcessing.Content.Enabled .Page.Site.Params.ImageProcessing.Content.Widths nil)
+    "Attributes" (merge $attributes (dict
+        "src" $src
+        "width" $image.Width
+        "height" $image.Height
+        "alt" $alt
+        "title" ($caption | markdownify)
+        "class" (cond $galleryImage "gallery-image" "")
+        "loading" "lazy"
+        "sizes" "(max-width: 767px) calc(100vw - 30px), (max-width: 1023px) 700px, (max-width: 1279px) 950px, 1232px"
+    ))
+) }}
+{{- end -}}
