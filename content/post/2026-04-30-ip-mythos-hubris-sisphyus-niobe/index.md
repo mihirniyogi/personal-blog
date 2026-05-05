@@ -13,8 +13,8 @@ tags:
   - Niobe
 series:
   - Mythos
-draft: true
-date: 2026-05-05T20:15:00
+draft: false
+date: 2026-05-05T20:51:00
 ---
 
 ### what's this series about?
