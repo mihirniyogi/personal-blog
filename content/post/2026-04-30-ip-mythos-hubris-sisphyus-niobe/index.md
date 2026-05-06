@@ -1,5 +1,5 @@
 ---
-title: Mythos - Sisphyus, Niobe, Marsyas
+title: 📙Mythos - Sisphyus, Niobe, Marsyas
 description: My first chapter recap/review!
 drink: ''
 song: ''
