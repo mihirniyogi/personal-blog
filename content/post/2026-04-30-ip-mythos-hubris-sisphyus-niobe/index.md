@@ -1,5 +1,5 @@
 ---
-title: '[IP] Mythos - Hubris - Sisphyus, Niobe'
+title: Mythos - Sisphyus, Niobe, Marsyas
 description: My first chapter recap/review!
 drink: ''
 song: ''
