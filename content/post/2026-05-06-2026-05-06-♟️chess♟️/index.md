@@ -1,6 +1,6 @@
 ---
 title: ♟️CHESS♟️
-description: yes chess
+description: ''
 drink: ''
 song: ''
 image: ''
