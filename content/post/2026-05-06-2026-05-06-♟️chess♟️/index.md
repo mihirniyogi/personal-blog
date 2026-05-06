@@ -4,7 +4,8 @@ description: yes chess
 drink: ''
 song: ''
 image: ''
-categories: []
+categories:
+  - Trying Things
 tags:
   - Chess
   - Club
