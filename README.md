@@ -41,6 +41,36 @@ override layer so theme updates stay painless.
 
 Front matter also carries `drink` and `song` fields, surfaced as the post's "vibe" metadata.
 
+**Cover image:** set the "Featured Image" field in the CMS (or `image:` in
+front matter). The file lives in the post's own folder and becomes the card
+cover on the homepage. Posts without one still publish — they just render as a
+text card.
+
+### Theming
+
+The site-wide accent is a fixed blue, set as `--accent-color` /
+`--accent-color-darker` in the `:root` block of `assets/scss/custom.scss`
+(and mirrored in the dark-scheme block). Change it there if you ever want a
+different default.
+
+Each category has its own colour, which overrides that blue on its post
+pages and is also used for its pill label. **All category colours live in one
+place: `data/category_colors.yaml`**, keyed by the url-ized category name
+(e.g. `trying-things`):
+
+```yaml
+trying-things:
+  color:  "#d47254"   # post-page accent + pill background
+  darker: "#bc5738"   # hover / link-darker shade
+  text:   "#ffffff"   # pill label text
+```
+
+Two small consumers read this file: the pill via
+`layouts/_partials/article/components/details.html`, and the post-page accent
+via an inline style in `layouts/single.html`. To add a category colour, just
+add an entry here — nothing else to touch. A category not listed still works:
+it falls back to the global blue accent and the theme's hashed pill colour.
+
 ### Running locally
 
 ```sh

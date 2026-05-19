@@ -1,6 +1,6 @@
 {{ define "body-class" }}
     article-page
-    {{/* 
+    {{/*
         Enable the right sidebar if
             - Widget different from 'TOC' is enabled
             - TOC is enabled and not empty
@@ -24,6 +24,14 @@
 {{ end }}
 
 {{ define "main" }}
+
+    {{/* Post-page accent from the single source of truth. `:root body` beats
+         both the light and dark global accent rules in custom.scss. */}}
+    {{- with .Params.categories -}}
+        {{- with index site.Data.category_colors (index . 0 | urlize) -}}
+            <style>:root body{--accent-color:{{ .color }};--accent-color-darker:{{ .darker }};}</style>
+        {{- end -}}
+    {{- end }}
 
     <div class="back-to-home">
         {{ if eq .Section "private" }}

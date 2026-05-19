@@ -1,0 +1,30 @@
+# Single source of truth for per-category colours.
+# Keys are the url-ized category name ("Trying Things" -> "trying-things").
+#   color  = accent on that category's post pages + pill background
+#   darker = hover / link-darker shade for the post accent
+#   text   = pill label text colour
+# Consumed by:
+#   - layouts/_partials/article/components/details.html  (pill)
+#   - layouts/single.html                                (post-page accent)
+# A category not listed here falls back to the theme's hashed colour
+# and the global blue accent.
+
+trying-things:
+  color: "#d47254"
+  darker: "#bc5738"
+  text: "#ffffff"
+
+reading-recap:
+  color: "#9e79c8"
+  darker: "#8154b6"
+  text: "#ffffff"
+
+living-life:
+  color: "#43a386"
+  darker: "#30826a"
+  text: "#ffffff"
+
+mindful-musings:
+  color: "#5c83d1"
+  darker: "#3966c0"
+  text: "#ffffff"

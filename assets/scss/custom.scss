@@ -40,18 +40,45 @@
     --base-font-family: 'Inter', system-ui, sans-serif;
     --code-font-family: 'JetBrainsMono', 'Courier New', monospace;
 
-    --accent: hsl(220, 73%, 56%);
-    --accent-dark: hsl(220, 73%, 46%);
+    // Site-wide accent (links, tags, buttons). Category post pages override
+    // these below; everything else stays this blue.
+    --accent-color:        hsl(220, 73%, 56%);
+    --accent-color-darker: hsl(220, 73%, 46%);
+    --accent:      var(--accent-color);
+    --accent-dark: var(--accent-color-darker);
+
+    // Fixed brand blue, never overridden by the per-post category accent.
+    // Used for footer elements that should stay blue everywhere.
+    --brand: hsl(220, 73%, 56%);
 
     // Subtle "card" surface, reused by vibe blocks and the series chip.
     --surface: rgba(0, 0, 0, 0.03);
     --surface-hover: rgba(0, 0, 0, 0.06);
 }
 
-[data-scheme="dark"] {
-    --surface: rgba(255, 255, 255, 0.07);
-    --surface-hover: rgba(255, 255, 255, 0.12);
+// `:root[data-scheme="dark"]` (not just `[data-scheme="dark"]`) to match the
+// theme's own specificity — it sets a near-white accent in dark mode that
+// would otherwise win over ours.
+:root[data-scheme="dark"] {
+    --accent-color:        hsl(220, 73%, 56%);
+    --accent-color-darker: hsl(220, 73%, 46%);
+    --accent-color-text: #fff;
+
+    // Deeper, slightly cool dark with more page/card contrast than the
+    // theme's flat grays — feels less washed-out.
+    --body-background: #15171c;
+    --card-background: #1e2129;
+    --card-background-selected: #272b35;
+    --card-separator-color: rgba(255, 255, 255, 0.08);
+    --body-text-color: rgba(255, 255, 255, 0.75);
+    --blockquote-background-color: #1e2129;
+
+    --surface: rgba(255, 255, 255, 0.06);
+    --surface-hover: rgba(255, 255, 255, 0.1);
 }
+
+// Per-post category accent is set inline by layouts/single.html from
+// data/category_colors.yaml (the single source of truth).
 
 // Sidebar title, subtitle, avatar adjustment
 .sidebar {
@@ -67,7 +94,13 @@
             font-weight: 700;
             @include respond(2xl) {
                 font-size: 2.2rem;
-            }     
+            }
+
+            // The title is an <a>; the theme's generic `a` rule colours it
+            // with the accent, so override on the anchor itself.
+            a {
+                color: var(--card-text-color-main);
+            }
         }
 
         .site-description {
@@ -86,10 +119,14 @@
     }
 }
 
-// Footer adjustment
+// Footer adjustment — keep it blue regardless of the post's category accent.
 footer.site-footer {
     &:before {
-        background: var(--accent);
+        background: var(--brand);
+    }
+
+    .copyright {
+        color: var(--brand);
     }
 }
 
@@ -102,9 +139,11 @@ body.article-page {
     .back-to-home {
         a {
             display: inline-flex;
-            align-items: center; 
-            gap: 4px;          
-            color: var(--accent-dark); 
+            align-items: center;
+            gap: 4px;
+            // Tracks the post's accent (category colour on category posts,
+            // global blue otherwise) since these vars cascade from <body>.
+            color: var(--accent-color);
             opacity: 0.7;
             font-size: 1.5rem; 
             font-weight: 500;
@@ -208,7 +247,8 @@ body.article-page {
     }
 }
 
-// Dark mode: the default link color is too dim, so brighten just the text.
+// Dark mode: use the brighter accent base (not the darker shade) so the
+// chip text stays legible on the dark background and tracks the palette.
 [data-scheme="dark"] .article-series a {
-    color: hsl(220, 90%, 78%);
+    color: var(--accent-color);
 }
