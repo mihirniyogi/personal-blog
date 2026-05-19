@@ -42,6 +42,15 @@
 
     --accent: hsl(220, 73%, 56%);
     --accent-dark: hsl(220, 73%, 46%);
+
+    // Subtle "card" surface, reused by vibe blocks and the series chip.
+    --surface: rgba(0, 0, 0, 0.03);
+    --surface-hover: rgba(0, 0, 0, 0.06);
+}
+
+[data-scheme="dark"] {
+    --surface: rgba(255, 255, 255, 0.07);
+    --surface-hover: rgba(255, 255, 255, 0.12);
 }
 
 // Sidebar title, subtitle, avatar adjustment
@@ -73,7 +82,6 @@
             object-fit: cover;
             object-position: center 5%;
             border-radius: 15%;
-            // filter: hue-rotate(180deg) saturate(35%);
         }
     }
 }
@@ -88,7 +96,7 @@ footer.site-footer {
 // Single post pages
 body.article-page {
     .left-sidebar {
-        display:none;
+        display: none;
     }
 
     .back-to-home {
@@ -144,19 +152,14 @@ body.article-page {
 }
 
 .vibe-block {
-    padding: 1.5rem 2rem; 
-    background-color: rgba(0, 0, 0, 0.03); 
-    font-size: 1.5rem; 
+    padding: 1.5rem 2rem;
+    background-color: var(--surface);
+    font-size: 1.5rem;
     color: var(--body-text-color);
 }
 
-[data-scheme="dark"] .vibe-block {
-    /* Switches to a soft, semi-transparent white on dark backgrounds */
-    background-color: rgba(255, 255, 255, 0.05);
-}
-
-// Centered, responsive 16:9 YouTube embed (overrides Hugo's built-in shortcode)
-// Full width on phones, half width (centered) on laptops/desktops.
+// Centered, responsive 16:9 YouTube embed (overrides Hugo's built-in shortcode).
+// Full width on phones; narrower + centered on laptops/desktops (tune the % below).
 .video-embed {
     position: relative;
     width: 100%;
@@ -171,6 +174,8 @@ body.article-page {
         border: 0;
     }
 
+    // Raw min-width query (not the theme's `respond()` mixin) because this
+    // is mobile-first: the theme mixin is max-width / desktop-first.
     @media (min-width: 768px) {
         width: 75%;
     }
@@ -192,22 +197,18 @@ body.article-page {
         font-size: 1.4rem;
         font-weight: 500;
         color: var(--accent-dark);
-        background-color: rgba(0, 0, 0, 0.03);
+        background-color: var(--surface);
         border-radius: 6px;
         text-decoration: none;
         transition: background-color 0.2s ease;
 
         &:hover {
-            background-color: rgba(0, 0, 0, 0.06);
+            background-color: var(--surface-hover);
         }
     }
 }
 
+// Dark mode: the default link color is too dim, so brighten just the text.
 [data-scheme="dark"] .article-series a {
     color: hsl(220, 90%, 78%);
-    background-color: rgba(255, 255, 255, 0.07);
-
-    &:hover {
-        background-color: rgba(255, 255, 255, 0.12);
-    }
 }
