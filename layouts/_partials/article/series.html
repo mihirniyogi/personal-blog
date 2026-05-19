@@ -1,0 +1,7 @@
+{{- with .GetTerms "series" -}}
+<div class="article-series">
+  {{- range . -}}
+    <a href="{{ .RelPermalink }}">📚 Part of the series: {{ .LinkTitle }}</a>
+  {{- end -}}
+</div>
+{{- end -}}

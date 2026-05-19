@@ -17,5 +17,10 @@ theme = "hugo-theme-stack"
     post = "/p/:slug/"
     page = "/:slug/"
 
+[taxonomies]
+    category = "categories"
+    tag      = "tags"
+    series   = "series"
+
 [services.disqus]
     shortname = "hugo-theme-stack"

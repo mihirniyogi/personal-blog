@@ -47,6 +47,8 @@
 
     {{ partial "article/article.html" . }}
 
+    {{ partial "article/series.html" . }}
+
     {{ if .Params.links }}
         {{ partial "article/components/links" . }}
     {{ end }}
