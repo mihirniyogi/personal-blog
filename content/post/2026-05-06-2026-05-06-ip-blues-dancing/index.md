@@ -4,14 +4,14 @@ description: ''
 drink: Iced Latte with Oat Milk, [Bench Coffee Co](https://maps.app.goo.gl/nqxSR2TUP5gJDQ667)
 song: ''
 image: ''
-categories: []
+categories:
+  - Trying Things
 tags:
   - Dancing
   - Community
-series:
-  - Trying Things
+series: []
 draft: false
-date: 2026-05-19T14:25:00
+date: 2026-05-19T15:20:00
 ---
 
 A friend and I have attempted the many, many dances of Melbourne! Despite having two left feet and being incredibly awkward with my body, I've picked up on the basic steps of not just Salsa, but Blues, Swing and Line Dancing!
