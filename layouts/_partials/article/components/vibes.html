@@ -2,13 +2,21 @@
 <div class="post-vibes-container">
     {{ if .Params.drink }}
     <div class="vibe-block">
-        <span class="vibe-text">Drink of the Day 🍵 {{ .Params.drink | markdownify }}</span>
+        <span class="vibe-block__icon" aria-hidden="true">🍵</span>
+        <div class="vibe-block__body">
+            <span class="vibe-block__label">Drink of the day</span>
+            <span class="vibe-block__value">{{ .Params.drink | markdownify }}</span>
+        </div>
     </div>
     {{ end }}
 
     {{ if .Params.song }}
     <div class="vibe-block">
-        <span class="vibe-text">Song of the Day 🎵 {{ .Params.song | markdownify}}</span>
+        <span class="vibe-block__icon" aria-hidden="true">🎵</span>
+        <div class="vibe-block__body">
+            <span class="vibe-block__label">Song of the day</span>
+            <span class="vibe-block__value">{{ .Params.song | markdownify }}</span>
+        </div>
     </div>
     {{ end }}
 </div>

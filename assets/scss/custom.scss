@@ -191,10 +191,39 @@ body.article-page {
 }
 
 .vibe-block {
-    padding: 1.5rem 2rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem 1.4rem;
     background-color: var(--surface);
-    font-size: 1.5rem;
+    border-left: 3px solid var(--accent-color);
+    border-radius: 4px;
     color: var(--body-text-color);
+
+    &__icon {
+        font-size: 1.8rem;
+        line-height: 1;
+        flex-shrink: 0;
+    }
+
+    &__body {
+        display: flex;
+        flex-direction: column;
+        gap: 0.15rem;
+        min-width: 0;
+    }
+
+    &__label {
+        font-size: 1.1rem;
+        font-weight: 600;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+        color: var(--card-text-color-tertiary);
+    }
+
+    &__value {
+        font-size: 1.5rem;
+    }
 }
 
 // Centered, responsive 16:9 YouTube embed (overrides Hugo's built-in shortcode).
