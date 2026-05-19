@@ -11,8 +11,7 @@ tags:
   - Club
   - Community
   - Exchange
-series:
-  - Trying Things
+series: []
 draft: false
 date: 2026-05-06T16:44:00
 ---
