@@ -20,7 +20,7 @@ A friend and I have attempted the many, many dances of Melbourne! Despite having
 
 Introduced by another friend of mine who stays here long term, the free beginner Salsa class in the CBD by [The Salsa Foundation](https://www.thesalsafoundation.com.au/) is something I think everyone should go for once. After the beginner class, an official course just happened to be starting right after and they let us attend this first iteration for free! Difficult as it was, I did like the vibes - _smooth, sexy, swaying_. 
 
-{{ < youtube tGGUDnq4P1I >}}
+{{< youtube tGGUDnq4P1I >}}
 
 Obviously, our moves were not as smooth as Jai (the founder/teacher) and the partner dancing with him in the video. The teachers were great and the class was so friendly to beginners and all ages. Fantastic experience overall. I think this was when I first thought to myself that dance is more accessible than I thought, and anyone could at least learn the basic moves.
 
