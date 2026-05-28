@@ -1,5 +1,5 @@
 ---
-title: Musical Movies
+title: Musical Movies (+ Review of Notre Dame)
 description: rediscovering my inner child 🙌
 drink: ''
 song: ''
@@ -42,6 +42,12 @@ Why do I like these? Not only do they make me feel, but it's like the possibilit
 
 Coming to the point, these musical/movies push forward this journey of mine. The lyrics, the music, the dancing have intricacies and nuances of the emotions being expressed. Even if they're more happy-go-lucky, like the ones in Hairspray, or tragic, like those in Notre Dame. That's the primary reason, anyway. 
 
-Also, they can be pretty idealistic! The world is _usually_ simpler, a little less gray, dull, more full of colour and life. I think that's just fun to watch. 
+Also, they can be pretty idealistic! The world is _usually_ simpler, a little less gray, dull, more full of colour and life. I think that's just fun to watch, but also partially because it's the world envision ourselves in, or the people in it are those we aspire to be. And the songs. OH-EM-GEE. Those from musicals/musical movies are usually absolute bangers. You can play them over and over again. In the shower. While cleaning. While travelling. Notre Dame had _banging_ tracks.
 
-And the songs. OH-EM-GEE. Those from musicals/musical movies are usually absolute bangers. You can play them over and over again. In the shower. While cleaning. While travelling. Notre Dame had _banging_ tracks.
+### review of notre dame
+
+I'm adding this section because I specifically felt the need to review The Hunchback of Notre Dame (Musical). Two friends and I caught a live show at The National Theatre, St Kilda, Melbourne. Where to even begin? The singing was INCREDIBLE. The choir was loud, explosive, theatrical, BIG. The emotions and acting were off the charts. It was my first time even watching this story and I somehow understood _every word_ they were singing. The audio mixing, clarity and enunciation were simply brilliant.
+
+What struck me the hardest was the emotion of Quasimodo and the Captain after Esmeralda's death. I was basically moved to tears, which I was scared to admit to either of my friends on that day. The plot twist wasn't shocking or anything, but the way the actors acted, every nuance, breath, word and note. I was taken in. I was transported just for that moment. I felt weak in the knees after that scene. I'm still reeling as I write this. 
+
+Just wow. No notes. 10/10.
