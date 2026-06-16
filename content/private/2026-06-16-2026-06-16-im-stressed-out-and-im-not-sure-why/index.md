@@ -6,7 +6,7 @@ categories: []
 tags: []
 series: []
 draft: false
-date: 2026-06-16T21:13
+date: 2026-06-16T21:14
 ---
 
 My nervous system is a wreck at the moment. Out of excitement for these friendship hanging out plans, I confused the plans around and forgot that the pengwengs group and the nat-hope-me group are separate things. I just wanted to hang with my friends :(
