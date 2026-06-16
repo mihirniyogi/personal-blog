@@ -15,11 +15,11 @@ collections:
   - name: post
     label: "Public Post"
     folder: "content/post"
-    path: "{{year}}-{{month}}-{{day}}-{{slug}}/index"
+    path: "{{slug}}/index"
     media_folder: ""
     public_folder: ""
     create: true
-    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    slug: "{{year}}-{{month}}-{{day}}-{{title}}"
     editor:
       preview: false
     fields:
@@ -38,11 +38,11 @@ collections:
   - name: private-post
     label: "🔒 Private Post"
     folder: "content/private"
-    path: "{{year}}-{{month}}-{{day}}-{{slug}}/index"
+    path: "{{slug}}/index"
     media_folder: ""
     public_folder: ""
     create: true
-    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    slug: "{{year}}-{{month}}-{{day}}-{{title}}"
     editor:
       preview: false
     fields:
