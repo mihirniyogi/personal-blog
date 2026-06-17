@@ -33,7 +33,8 @@ collections:
       - { label: "Tags", name: "tags", widget: "list", required: false, field: { widget: "string" } }
       - { label: "Series", name: "series", widget: "list", required: false, field: { widget: "string" } }
       - { label: "Draft", name: "draft", widget: "boolean", default: true }
-      - { label: "Date", name: "date", widget: "datetime", format: "YYYY-MM-DDTHH:mm:ssZ", default: "{{now}}" }
+      - { label: "Date", name: "date", widget: "datetime", format: "YYYY-MM-DDTHH:mm:ssZ", 
+          picker_utc: true, time_format: "HH:mm:ss", default: "{{now}}" }
 
   - name: private-post
     label: "🔒 Private Post"
@@ -54,4 +55,5 @@ collections:
       - { label: "Tags", name: "tags", widget: "list", required: false, field: { widget: "string" } }
       - { label: "Series", name: "series", widget: "list", required: false, field: { widget: "string" } }
       - { label: "Draft", name: "draft", widget: "boolean", default: true }
-      - { label: "Date", name: "date", widget: "datetime", format: "YYYY-MM-DDTHH:mm:ssZ", default: "{{now}}" }
+      - { label: "Date", name: "date", widget: "datetime", format: "YYYY-MM-DDTHH:mm:ssZ", 
+          picker_utc: true, time_format: "HH:mm:ss", default: "{{now}}" }
