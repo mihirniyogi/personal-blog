@@ -6,7 +6,7 @@ categories: []
 tags: []
 series: []
 draft: false
-date: 2026-05-20T17:40
+date: 2026-05-20T17:40:00Z
 ---
 
 After a call with mom, I'm not feeling so good. During the call, I gave her some emotional advice on how to communicate and interact with my sister. It felt great and we were talking about dealing with emotions and processing them.
